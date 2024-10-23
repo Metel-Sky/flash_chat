@@ -2,6 +2,8 @@ import 'package:flutter/material.dart'; // Імпортує бібліотеку
 import 'package:flash_chat/constants.dart'; // Імпортує файл з константами (наприклад, стилі, оформлення).
 
 class ChatScreen extends StatefulWidget {
+  const ChatScreen({super.key});
+
   @override
   _ChatScreenState createState() => _ChatScreenState();
 // Створює StatefulWidget, щоб зберігати стан чату, наприклад, введений текст.
@@ -15,13 +17,13 @@ class _ChatScreenState extends State<ChatScreen> {
         leading: null, // Відсутність іконки зліва.
         actions: <Widget>[
           IconButton(
-              icon: Icon(Icons.close), // Іконка "закрити".
+              icon: const Icon(Icons.close), // Іконка "закрити".
               onPressed: () {
                 //Implement logout functionality
                 // Дія, яка виконується при натисканні на кнопку (наприклад, вихід з облікового запису).
               }),
         ],
-        title: Text('⚡️Chat'), // Заголовок, що відображається в верхній панелі додатку.
+        title: const Text('⚡️Chat'), // Заголовок, що відображається в верхній панелі додатку.
         backgroundColor: Colors.lightBlueAccent, // Колір фону AppBar.
       ),
       body: SafeArea(
@@ -48,7 +50,7 @@ class _ChatScreenState extends State<ChatScreen> {
                       //Implement send functionality.
                       // Дія, яка виконується при натисканні на кнопку "Send" (наприклад, відправка повідомлення).
                     },
-                    child: Text(
+                    child: const Text(
                       'Send', // Текст на кнопці відправки.
                       style: kSendButtonTextStyle, // Стиль тексту кнопки, що зберігається в константах.
                     ),
