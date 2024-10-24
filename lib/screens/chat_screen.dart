@@ -14,7 +14,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        //automaticallyImplyLeading: false,//------Прибирає стрілочку назад
         leading: null, // Відсутність іконки зліва.
         actions: <Widget>[
           IconButton(

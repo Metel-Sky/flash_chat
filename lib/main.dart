@@ -19,6 +19,7 @@ class FlashChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       // Налаштування теми для всього додатка.
       // Тут використовується темна тема (ThemeData.dark()).
       theme: ThemeData.dark().copyWith(
