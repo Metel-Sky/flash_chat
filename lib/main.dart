@@ -30,6 +30,11 @@ class FlashChat extends StatelessWidget {
       // home вказує, який екран буде першим, коли ми запускаємо додаток.
       // Тут першим екраном буде WelcomeScreen.
       home: WelcomeScreen(),
+      routes: {//TODO---------------------так налаштовуються маршрути між сторінками------------
+        'login_screen': (context) => LoginScreen(),
+        'registration_screen': (context) => RegistrationScreen(),
+        'chat_screen': (context) => ChatScreen(),
+      },
     ); //1
   }
 }

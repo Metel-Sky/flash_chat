@@ -1,3 +1,4 @@
+import 'package:flash_chat/screens/login_screen.dart';
 import 'package:flutter/material.dart'; // Імпорт бібліотеки Material для використання віджетів та стилів.
 
 class WelcomeScreen extends StatefulWidget {
@@ -43,6 +44,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 borderRadius: BorderRadius.circular(30.0), // Задає округлі кути з радіусом 30 пікселів.
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, "login_screen");//--------------------перехід до LOGIN_SCREEN page
                     //Go to loginscreen.
                     // Дія, яка виконується при натисканні кнопки (наприклад, перехід на екран входу).
                   },
@@ -60,6 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 elevation: 5, // Ефект тіні для кнопки.
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, "registration_screen");
                     //Go to register screen.
                     // Дія, яка виконується при натисканні кнопки (наприклад, перехід на екран реєстрації).
                   },

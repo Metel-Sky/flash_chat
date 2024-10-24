@@ -14,6 +14,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         leading: null, // Відсутність іконки зліва.
         actions: <Widget>[
           IconButton(
@@ -23,7 +24,8 @@ class _ChatScreenState extends State<ChatScreen> {
                 // Дія, яка виконується при натисканні на кнопку (наприклад, вихід з облікового запису).
               }),
         ],
-        title: const Text('⚡️Chat'), // Заголовок, що відображається в верхній панелі додатку.
+        title: const Text('⚡️Chat'),
+        centerTitle: true,// Заголовок, що відображається в верхній панелі додатку.
         backgroundColor: Colors.lightBlueAccent, // Колір фону AppBar.
       ),
       body: SafeArea(

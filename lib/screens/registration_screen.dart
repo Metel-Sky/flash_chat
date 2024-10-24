@@ -82,6 +82,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 elevation: 5.0, // Ефект тіні, що створює візуальне підняття кнопки.
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, 'chat_screen');
                     //Implement registration functionality.
                     // Тут виконується дія при натисканні на кнопку, наприклад, реєстрація користувача.
                   },

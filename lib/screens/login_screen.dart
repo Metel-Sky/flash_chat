@@ -82,6 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 elevation: 5.0, // Ефект тіні, що створює візуальне підняття кнопки.
                 child: MaterialButton(
                   onPressed: () {
+                    Navigator.pushNamed(context, 'chat_screen');
                     //Implement login functionality.
                     // Тут виконується дія при натисканні на кнопку, наприклад, вхід користувача в систему.
                   },
