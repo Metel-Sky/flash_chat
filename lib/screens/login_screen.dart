@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   minWidth: 200.0, // Мінімальна ширина кнопки.
                   height: 42.0, // Висота кнопки.
                   child: Text(
-                    'Log In', // Текст, що відображається на кнопці.
+                    'Log In', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)// Текст, що відображається на кнопці.
                   ),
                 ),
               ),

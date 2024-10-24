@@ -24,7 +24,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 // Дія, яка виконується при натисканні на кнопку (наприклад, вихід з облікового запису).
               }),
         ],
-        title: const Text('⚡️Chat'),
+        title: const Text('⚡️Chat',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
         centerTitle: true,// Заголовок, що відображається в верхній панелі додатку.
         backgroundColor: Colors.lightBlueAccent, // Колір фону AppBar.
       ),

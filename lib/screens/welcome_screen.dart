@@ -13,20 +13,26 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white, // Задає білий фон для екрану.
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 24.0), // Додає відступи зліва та справа по 24 пікселі.
+        padding: EdgeInsets.symmetric(horizontal: 24.0),
+        // Додає відступи зліва та справа по 24 пікселі.
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, // Вирівнює дітей колонки по вертикалі по центру.
-          crossAxisAlignment: CrossAxisAlignment.stretch, // Розтягує дітей колонки по горизонталі на всю ширину.
+          mainAxisAlignment: MainAxisAlignment.center,
+          // Вирівнює дітей колонки по вертикалі по центру.
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          // Розтягує дітей колонки по горизонталі на всю ширину.
           children: <Widget>[
-            Row( // Використовується для розміщення логотипу та тексту поруч один з одним.
+            Row(
+              // Використовується для розміщення логотипу та тексту поруч один з одним.
               children: <Widget>[
                 Container(
-                  child: Image.asset('images/logo.png'), // Показує зображення логотипу з локальної папки.
+                  child: Image.asset('images/logo.png'),
+                  // Показує зображення логотипу з локальної папки.
                   height: 60, // Встановлює висоту контейнера з логотипом.
                 ),
                 Text(
                   'Flash chat', // Текстова назва додатку.
                   style: TextStyle(
+                    color: Colors.grey[600],
                     fontSize: 45, // Розмір тексту.
                     fontWeight: FontWeight.w900, // Жирний стиль шрифту.
                   ),
@@ -34,41 +40,60 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             SizedBox(
-              height: 48, // Додає порожній простір висотою 48 пікселів між логотипом та кнопкою.
+              height:
+                  48, // Додає порожній простір висотою 48 пікселів між логотипом та кнопкою.
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 16), // Додає вертикальні відступи по 16 пікселів.
+              padding: EdgeInsets.symmetric(vertical: 16),
+              // Додає вертикальні відступи по 16 пікселів.
               child: Material(
-                elevation: 5.0, // Створює ефект тіні, що піднімає кнопку над фоном.
-                color: Colors.lightBlueAccent, // Задає колір фону кнопки.
-                borderRadius: BorderRadius.circular(30.0), // Задає округлі кути з радіусом 30 пікселів.
+                elevation: 5.0,
+                // Створює ефект тіні, що піднімає кнопку над фоном.
+                color: Colors.lightBlueAccent,
+                // Задає колір фону кнопки.
+                borderRadius: BorderRadius.circular(30.0),
+                // Задає округлі кути з радіусом 30 пікселів.
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "login_screen");//--------------------перехід до LOGIN_SCREEN page
+                    Navigator.pushNamed(context,
+                        "login_screen"); //--------------------перехід до LOGIN_SCREEN page
                     //Go to loginscreen.
                     // Дія, яка виконується при натисканні кнопки (наприклад, перехід на екран входу).
                   },
                   minWidth: 200, // Мінімальна ширина кнопки.
                   height: 42, // Висота кнопки.
-                  child: Text('Log In'), // Текст на кнопці.
+                  child: Text(
+                    'Log In',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+                  ), // Текст на кнопці.
                 ),
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0), // Додає вертикальні відступи по 16 пікселів.
+              padding: EdgeInsets.symmetric(vertical: 16.0),
+              // Додає вертикальні відступи по 16 пікселів.
               child: Material(
-                color: Colors.blueAccent, // Задає колір фону для другої кнопки.
-                borderRadius: BorderRadius.circular(30.0), // Округлі кути для кнопки.
-                elevation: 5, // Ефект тіні для кнопки.
+                color: Colors.blueAccent,
+                // Задає колір фону для другої кнопки.
+                borderRadius: BorderRadius.circular(30.0),
+                // Округлі кути для кнопки.
+                elevation: 5,
+                // Ефект тіні для кнопки.
                 child: MaterialButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "registration_screen");
+                    Navigator.pushNamed(
+                      context,
+                      "registration_screen",
+                    );
                     //Go to register screen.
                     // Дія, яка виконується при натисканні кнопки (наприклад, перехід на екран реєстрації).
                   },
                   minWidth: 200, // Мінімальна ширина кнопки.
                   height: 42, // Висота кнопки.
-                  child: Text('Register'), // Текст на кнопці.
+                  child: Text('Register',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 25)), // Текст на кнопці.
                 ),
               ),
             ),

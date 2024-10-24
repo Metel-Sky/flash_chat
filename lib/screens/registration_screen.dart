@@ -90,7 +90,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   height: 42.0, // Висота кнопки.
                   child: Text(
                     'Register', // Текст, що відображається на кнопці.
-                    style: TextStyle(color: Colors.white), // Колір тексту кнопки.
+                    style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold, fontSize: 25), // Колір тексту кнопки.
                   ),
                 ),
               ),

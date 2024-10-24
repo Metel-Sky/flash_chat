@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 const kSendButtonTextStyle = TextStyle(
   color: Colors.lightBlueAccent, // Колір тексту - світло-синій.
   fontWeight: FontWeight.bold,   // Текст буде жирним.
-  fontSize: 18,                  // Розмір шрифту - 18.
+  fontSize: 22,                  // Розмір шрифту - 18.
 );
 
 const kMassageTextFieldDecoration = InputDecoration(
